@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>COBRA Documentation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,9 +20,10 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What is COBRA?</a></li>
+							<li><a href="#one">What is COBRA?</a></li>
+							<li><a href="#two">How does it work?</a></li>
 							<li><a href="#three">The Vision</a></li>
+							<li><a href="#four">The Team</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -35,8 +36,9 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>COBRA</h1>
-							<p>A <a href="https://mooseframework.inl.gov">MOOSE</a> based application enabling <br />
-							checkpoint based simulations of contact problems and machine learning .</p>
+							<h2>COntact proBlem Restart Application</h2>
+							<p>A <a href="https://mooseframework.inl.gov">MOOSE</a> based application enabling checkpoint simulations<br />
+							of stochastic contact problems. Built to be used with machine learning<br /> and digital twin models to empower intelligent process monitoring.</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -49,8 +51,9 @@
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Checkpoint finite element modeling</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Checkpoint Finite Element Modeling</h2>
+									<p>Modified MOOSE open-source finite element solver used to perform repeated small-scale contact and plasticity simulations. 
+										Generated based on process-relevant probability distributions.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -61,8 +64,10 @@
 							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Machine learning surrogate </h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Machine Learning Surrogate Modeling</h2>
+									<p>Machine learning based approach for obtaining finite-element-like results in a fraction of the time. 
+										Enabling the development of statistical models for process monitoring and control.
+									</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -73,8 +78,10 @@
 							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Integrated Digital Twin Modeling</h2>
+									<p>Fully integrated digital twin models for tracking of process conditions and distributions. Enabling real and accelerated time studies of process 
+										outcomes with physics-based results.
+									</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -86,22 +93,25 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>How does it work?</h2>
+							<p>
+								COBRA is an open-source framework for the simulation of systems with stochastic contact problems. COBRA is based existing open-source projects MOOSE and TensorFlow, with a significant amount of 
+								process specific code.
+							</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Integration with dynamic image analysis particle measurement.</h3>
+									<p>Adaptable to any particle size distribution.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
+									<h3>Representative-volume-element sampling of distributed process conditions.</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
+									<h3>Adaptability to an arbitrarty geometry.</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 								<section>
@@ -125,9 +135,52 @@
 							</ul>
 						</div>
 					</section>
+				<!-- Two -->
+				<section id="three" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>The Vision</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+						<div class="features">
+							<section>
+								<span class="icon solid major fa-code"></span>
+								<h3>Lorem ipsum amet</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-lock"></span>
+								<h3>Aliquam sed nullam</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-cog"></span>
+								<h3>Sed erat ullam corper</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-desktop"></span>
+								<h3>Veroeros quis lorem</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-link"></span>
+								<h3>Urna quis bibendum</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon major fa-gem"></span>
+								<h3>Aliquam urna dapibus</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+						</div>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</section>
+
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="four" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
