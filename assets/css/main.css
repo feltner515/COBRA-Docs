@@ -201,6 +201,10 @@ input, select, textarea {
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				/* background-image: -moz-linear-gradient(to right, #F0F8FF, #F0F8FF);
+				background-image: -webkit-linear-gradient(to right, #F0F8FF, #F0F8FF);
+				background-image: -ms-linear-gradient(to right, #F0F8FF, #F0F8FF);
+				background-image: linear-gradient(to right, #F0F8FF, #F0F8FF); */
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3222,7 +3226,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
-					width: 100%;
+					width: 100%
 				}
 
 			}
@@ -3241,6 +3245,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color: #5e42a6;
+			/* background-color: #F0F8FF; */
 		}
 
 		.wrapper.style1-alt {
