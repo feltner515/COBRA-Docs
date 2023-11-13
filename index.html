@@ -21,9 +21,11 @@
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
 							<li><a href="#one">What is COBRA?</a></li>
-							<li><a href="#two">How does it work?</a></li>
-							<li><a href="#three">The Vision</a></li>
-							<li><a href="#four">The Team</a></li>
+							<!-- <li><a href="#two">How does it work?</a></li> -->
+							<li><a href="#four">The Vision</a></li>
+							<li><a href="#five">Installation Instructions</a></li>
+							<li><a href="#three">The Team</a></li>
+
 						</ul>
 					</nav>
 				</div>
@@ -48,33 +50,34 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/checkpoint.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Checkpoint Finite Element Modeling</h2>
+									<h2>Checkpoint Finite Element Analysis</h2>
 									<p>Modified MOOSE open-source finite element solver used to perform repeated small-scale contact and plasticity simulations. 
 										Generated based on process-relevant probability distributions.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="checkpoint.html" class="button">FEA Background</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/ML_Stress.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Machine Learning Surrogate Modeling</h2>
+									<h2>Machine Learning FEA Surrogate</h2>
 									<p>Machine learning based approach for obtaining finite-element-like results in a fraction of the time. 
-										Enabling the development of statistical models for process monitoring and control.
+										Enabling the development of statistical models for process monitoring and control, as well as integration 
+										with digital twin models.
 									</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="surrogate.html" class="button">ML Approach</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
-						<section>
+						<!-- <section>
 							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
@@ -87,11 +90,11 @@
 									</ul>
 								</div>
 							</div>
-						</section>
+						</section> -->
 					</section>
 
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+					<!-- <section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>How does it work?</h2>
 							<p>
@@ -110,11 +113,6 @@
 									<p>Prediction of distrinuted process outcomes by sampling chaotic process conditions.</p>
 								</section>
 								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Applicable to most geometries and material properties.</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
 									<span class="icon solid major fa-desktop"></span>
 									<h3>Machine learning model reduction.</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
@@ -124,24 +122,25 @@
 									<h3>Integrated digital twin model building.</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
 							</div>
 							<ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> -->
+				
 				<!-- Two -->
-				<section id="three" class="wrapper style3 fade-up">
+				<section id="four" class="wrapper style3 fade-up">
 					<div class="inner">
 						<h2>The Vision</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+						<p>
+							COBRA is intended to be a tool for the development of digital twin models for process monitoring and control.
+							By enabling the rapid simulation of stochastic contact problems, COBRA can be used to generate training data for machine learning models.
+
+							
+						</p>
 						<div class="features">
-							<section>
+							<!-- <section>
 								<span class="icon solid major fa-code"></span>
 								<h3>Lorem ipsum amet</h3>
 								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
@@ -170,45 +169,101 @@
 								<span class="icon major fa-gem"></span>
 								<h3>Aliquam urna dapibus</h3>
 								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
+							</section> -->
 						</div>
 						<ul class="actions">
 							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</section>
+				<section id="five" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>Installation Instructions</h2>
+						<p>
+							COBRA is installed and updated by way of git and GitHub. 
+						</p>
+						<div class="features">
+							<!-- <section>
+								<span class="icon solid major fa-code"></span>
+								<h3>Lorem ipsum amet</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-lock"></span>
+								<h3>Aliquam sed nullam</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-cog"></span>
+								<h3>Sed erat ullam corper</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-desktop"></span>
+								<h3>Veroeros quis lorem</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-link"></span>
+								<h3>Urna quis bibendum</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section>
+							<section>
+								<span class="icon major fa-gem"></span>
+								<h3>Aliquam urna dapibus</h3>
+								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+							</section> -->
+						</div>
+						<ul class="actions">
+							<li><a href="installation_instructions.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</section>
 
 			<!-- Four -->
-				<section id="four" class="wrapper style2 spotlights">
-					<section>
-						<h2>The Team</h2>
-						<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Langdon Feltner</h2>
-								<p>Modified MOOSE open-source finite element solver used to perform repeated small-scale contact and plasticity simulations. 
-									Generated based on process-relevant probability distributions.</p>
-							</div>
+
+			<section id="three" class="wrapper style2 spotlights">
+				
+				<div class="inner">
+					<h2>The Team</h2>
+					<div class="features">
+					</div>
+				</div>
+				
+				<section>
+					<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Langdon Feltner</h2>
+							<p>
+								PhD candidate at Purdue University in materials engineering. Interested in solid mechanics, 
+								modeling of stochastic processes, and machine learning based acceleration of numerical simulations. 
+								Curator of COBRA and actively applying the framework to shot peening.
+							</p>
 						</div>
-					</section>
-					<section>
-						<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Paul Mort</h2>
-								<p>Machine learning based approach for obtaining finite-element-like results in a fraction of the time. 
-									Enabling the development of statistical models for process monitoring and control.
-								</p>
-							</div>
-						</div>
-					</section>
+					</div>
 				</section>
+				<section>
+					<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Paul Mort</h2>
+							<p>
+								Professor at Purdue University in materials engineering. Research interests include fluidized bed granulation, 
+								powder rheology, additive manufacturing, and shot peening. Particle processing expert, Proctor & Gamble 
+								alumni, and advisor to the COBRA project. 
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+				
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; COBRA. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
