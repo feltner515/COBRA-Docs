@@ -38,23 +38,58 @@
 							<h1 class="major">Checkpoint Finite Element Modeling</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<p>
-								Finite element models are deterministic, and this is a good thing. When you submit the same input file 500 times, you'll get the same answer 500 times. Unfortunately, the computation will 
-								take the same amount of time 500 times. This is impractical when we want to run a large number of simulations to explore the parameter space of a process. Checkpointing seeks to solve this issue.
+								Finite element models are deterministic, and this is a good thing. When you submit 
+								the same input file 500 times, you'll get the same answer 500 times. Unfortunately, the 
+								computation will 
+								take the same amount of time 500 times. This is impractical when we want to 
+								run a large number of simulations to explore the parameter space of a process. 
+								Checkpointing seeks to solve this issue.
 
 							</p>
 							<p>
-								Checkpointing is a method of saving the state of a simulation at a given point in time. This allows the user to stop the simulation, and restart it at a later time. This is useful for a number of reasons. 
-								For example, if the simulation is running on a cluster, and the user's job is scheduled to end, the user can stop the simulation, and restart it at a later time. COBRA modifies this method by 
-								allowing the user to change the mesh between simulations and project the state of the previous simulation onto the new mesh, automatically initializing stateful material properties. 
+								Checkpointing is a method of saving the state of a simulation at a given point in time. 
+								This allows the user to stop the simulation, and restart it at a later time. 
+								This is useful for a number of reasons. 
+								For example, if the simulation is running on a cluster, and the user's job is scheduled 
+								to end, the user can stop the simulation, and restart it at a later time. 
+								COBRA modifies this method by 
+								allowing the user to change the mesh between simulations and project the 
+								state of the previous simulation onto the new mesh, automatically 
+								initializing stateful material properties. 
 							</p>
 							<p>
-								<span class="image right"><img src="images/bigmodel.jpg" alt="" /></span> In discrete processes, such as shot peening and cold spray coating, the net effect of the process can be quantified as the interaction of 
-								of many individual events. In shot peening, the compressive stress state of the part is determined by thousands of impacts between 
-								shot particles and the part. For a full-scale simualtion of a shot peening process, thousands of particles must be created, each with an associated 
-								conact pair that is checked for at each time step, and each with an impact event that induces plastic deformation in the part. 
-								The size of the model needed to capture the entire process is often too large to be tractable, in fact, most of the computational effort is spent translating particles through 
-								space that are not even in contact with the part! Checkpointing allows us to trim the fat from the model, by simulating one event (in this case, 
+								<span class="image right"><img src="images/bigmodel.jpg" alt="" /></span> In discrete 
+								processes, such as shot peening and cold spray coating, the net effect of the process 
+								can be quantified as the interaction of 
+								of many individual events. In shot peening, the compressive stress state of the part 
+								is determined by thousands of impacts between 
+								shot particles and the part. For a full-scale simualtion of a shot peening process, 
+								thousands of particles must be created, each with an associated 
+								conact pair that is checked for at each time step, and each with an impact event that 
+								induces plastic deformation in the part. 
+								The size of the model needed to capture the entire process is often too large to be 
+								tractable, in fact, most of the computational effort is spent translating particles through 
+								space that are not even in contact with the part! Checkpointing allows us to trim the 
+								fat from the model, by simulating one event (in this case, 
 								one particle at a time) and shrinking the model size to the region affected by the impact.
+							</p>
+							<p>
+								Shot peening is a great practical example of a Markov process. Essentially a series of random events, 
+								where the state of the system after impact n+1 is dependent on the state of the system after impact n, 
+								and the probability distributions that describe the speed, size, and shape of particle n+1. In addition, 
+								Markov processes have a decay in the memory of the system. If a region is impacted by 40 particles, did the location of the first 
+								impact really matter? Probably not. COBRA is well suited to the study of these kinds of processes. 
+							</p>
+							<p>
+								So to summarize, COBRA is a MOOSE based finite element solver that enables block-restriced stateful 
+								material property initialization, allowing the mesh to be changed and the solution from a previous simulation 
+								projected as the initial state for another step. COBRA is well suited to the study of discrete processes, 
+								especially Markov processes where tracking the current state of the system is necessary to 
+								predict the future state. COBRA handles simualtion outputs is a systematic way, allowing COBRA-ML to parse the data and 
+								build machine learning surrogate models that can provide approximate solutions in a fraction of the time.
+							</p>
+							<p>
+								<a href="surrogate.html" class="button">Learn more about COBRA-ML</a><a href="installation_instructions.html" class="button">Learn how to install COBRA</a>
 							</p>
 						</div>
 					</section>
